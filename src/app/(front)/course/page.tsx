@@ -1,6 +1,6 @@
 import FeaturesCourse from "@/components/features-course";
 import { CourseRepository } from "@/repositories/course.repository";
-import { CourseService } from "@/services/course.service";
+import { CourseService } from "@/services/course-service";
 
 export default async function CoursePage() {
   const courseRepository = new CourseRepository();
@@ -12,9 +12,6 @@ export default async function CoursePage() {
       {
         courses.length > 0 && <FeaturesCourse courses={courses} />
       }
-    </main>
-  );
-}
     </main>
   );
 }

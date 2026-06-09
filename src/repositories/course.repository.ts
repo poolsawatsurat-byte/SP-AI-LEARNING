@@ -4,7 +4,7 @@ export interface Course {
   description: string;
   image: string;
   link: string;
-  [key: string]: any;
+  [key: string]: string | number | boolean | null;
 }
 
 export interface CourseApiResponse {
